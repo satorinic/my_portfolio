@@ -10,6 +10,16 @@
     = stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/css/materialize.min.css"
     = stylesheet_link_tag "site"
   %body
+    .navbar-fixed
+      %nav
+        .nav-wrapper
+          %a
+            = link_to 'About me', '#'
+          %ul.right.hide-on-med-and-down
+            %li
+              = link_to 'Projects', '#'
+            %li
+              = link_to 'Experience', '#'
     = yield
     = partial 'partials/footer'
     = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"
