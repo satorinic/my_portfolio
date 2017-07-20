@@ -1,0 +1,14 @@
+- name: Slow Food restaurant
+  description: First simple Website with log in details and databases, done third week in coding camp
+
+- name: My Portfolio
+  description: Setting up a simple static Website for showing my experience and coding projects to potential employers, done forth week in coding camp
+
+- name: ATM
+  description: First coding experience, trying to do a simple ATM-machine, first week in coding camp
+
+- name: Simple Library
+  description: A simple Library, done in second week in coding camp
+
+- name: BMI-calculator
+  description: A simple code task to calculate a BMI, done second week in coding camp

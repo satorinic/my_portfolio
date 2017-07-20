@@ -1,0 +1,12 @@
+.welcome
+%h1 Hello Niclas
+%p.doc
+  = link_to "Read Documentation", 'https://middlemanapp.com/basics/templating_language/',
+  target: '_blank'
+
+.projects
+  - data.projects.each do |project|
+    %h4
+      = project[:name]
+    %p
+      = project[:description]
