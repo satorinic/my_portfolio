@@ -1,12 +1,40 @@
-.welcome
-%h1 Hello Niclas
-%p.doc
-  = link_to "Read Documentation", 'https://middlemanapp.com/basics/templating_language/',
-  target: '_blank'
+#index-banner.parallax-container
+  .section.no-pad-bot
+    .container
+      %br/
+      %br/
+      %h1.header.center.black-text.lighten-1 Niclas Carlsson coding portfolio
+      .row.center
+      %h5.header.col.s12.white-text.lighten-1 A presentation of my coding portfolio, work experience and contact information.
+      .row.center
+      %br/
+      %br/
+  .parallax
+    = image_tag 'images/Home/dramatiskhimmel.png'
 
-.projects
-  - data.projects.each do |project|
-    %h4
-      = project[:name]
-    %p
-      = project[:description]
+.container
+  .section
+    / Icon Section
+    .row
+      .col.s12.m4
+        .icon-block
+          %h2.center.blu-text
+            %a{:href => "projects", :title => "My Projects"}
+              %i.material-icons.black-text laptop_mac
+
+          %h5.center Coding projects
+          %p.light Check out my coding projects. In a short period of time I've created a plethora of projects both by myself as well as together with other developers.
+      .col.s12.m4
+        .icon-block
+          %h2.center.blu-text
+            %a{:href => "workexperience-cv", :title => "Work Experience"}
+              %i.material-icons.black-text assignment
+          %h5.center Work Experience
+          %p.light Recently, I've made a career shift to become a fullstack developer. With my previous work experience I bring insights from different field as consumer banking, national parlament, local municipality, policy making and media relations. I also have a master degree in marketing and business development from university.
+      .col.s12.m4
+        .icon-block
+          %h2.center.blu-text.darken-4
+            %a{:href => "blog", :title => "My blog"}
+              %i.material-icons.black-text blur_on
+          %h5.center My Blog
+          %p.light I will soon start blogging on different issues related to coding and web development. Read to find out more and feel free to comment and give me tips and feedback.

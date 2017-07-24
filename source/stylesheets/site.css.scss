@@ -1,1 +1,97 @@
+nav ul a,
+nav .brand-logo {
+  color: #e1f5fe;
+}
+nav ul li:hover {
+  background-color: orange;
+}
 
+nav a:hover {
+  background-color: orange;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+divider section {
+  background-color: blue lighten-5
+
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+
+footer.page-footer {
+  margin: 0;
+}
+
+footer.page-footer ul li:hover {
+  background-color: orange;
+}
+
+.devicon {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.devicon-box {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa_custom {
+color: #0099CC
+}
+
+
+.card-title {
+  font-size: 22px;
+  font-style: bold;
+
+
+
+}

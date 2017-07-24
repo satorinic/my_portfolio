@@ -5,22 +5,35 @@
     %meta{:charset => "utf-8"}/
     %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+    %link{:href => "favicon.ico", :rel => "icon", :type => "image/x-icon"}/
+    %link{:href => "favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
     / Use the title from a page's frontmatter if it has one
-    %title= current_page.data.title || "Middleman"
+    %title = current_page.data.title || "Niclas' Coding Portfolio"
+    = stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons"
+    = stylesheet_link_tag "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
     = stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/css/materialize.min.css"
+    =stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     = stylesheet_link_tag "site"
   %body
     .navbar-fixed
-      %nav
-        .nav-wrapper
-          %a
-            = link_to 'About me', '#'
-          %ul.right.hide-on-med-and-down
+      %nav.black
+        .nav-wrapper.right-align
+          %a.right
+            = link_to 'About Niclas Carlsson', 'about'
+
+          %ul.left.show-on-all
             %li
-              = link_to 'Projects', '#'
+              = link_to 'Home', 'index'
             %li
-              = link_to 'Experience', '#'
+              = link_to 'Projects', 'projects'
+            %li
+              = link_to 'Work Experience/CV', 'workexperience-cv'
+            %li
+              = link_to 'Blog', 'blog'
     = yield
+
     = partial 'partials/footer'
+    = stylesheet_link_tag "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
     = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"
     = javascript_include_tag "site"

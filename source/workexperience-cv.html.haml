@@ -1,0 +1,134 @@
+#index-banner.parallax-container
+  .section.no-pad-bot
+    .container
+      %br/
+      %br/
+      %h1.header.center.white-text.lighten-1 CV and Work Experience
+      .row.center
+
+      .row.center
+      %br/
+      %br/
+  .parallax
+    = image_tag 'images/backgrounds/Käringön.png'
+
+%ul.collapsible.popout{"data-collapsible" => "accordion"}
+  %li
+    .collapsible-header
+      %i.material-icons> school
+      Education
+    .collapsible-body
+      %span
+      .educations
+        %br/
+
+        - data.educations.each do |education|
+          %h5
+            = education[:education]
+          %p
+            = education[:title]
+          %p
+            = education[:year]
+          %p
+            = education[:url]
+          %br/
+          %br/
+
+
+  %li
+    .collapsible-header
+      %i.material-icons> business_center
+      Work Experience
+    .collapsible-body
+      %span
+      .workexperience
+        %br/
+
+        - data.workexperience.each do |workexperience|
+          %h5
+            = workexperience[:title]
+          %p
+            = workexperience[:employer]
+          %p
+            = workexperience[:description]
+          %p
+            = workexperience[:year]
+          %br/
+          %br/
+  %li
+    .collapsible-header
+      %i.material-icons> group
+      Commissions of Trust
+    .collapsible-body
+      %span
+      .commissions_of_trust
+        %br/
+
+        - data.commissions_of_trust.each do |commissions_of_trust|
+          %h5
+            = commissions_of_trust[:assignment]
+          %p
+            = commissions_of_trust[:year]
+          %p
+            = commissions_of_trust[:description]
+
+          %br/
+          %br/
+  %li
+    .collapsible-header
+      %i.material-icons> record_voice_over
+      Language Capabilities
+    .collapsible-body
+      %span
+      .language_capabilities
+        %br/
+
+        - data.language_capabilities.each do |language_capabilities|
+          %h5
+            = language_capabilities[:language]
+          %p
+            = language_capabilities[:level]
+          %p
+            = language_capabilities[:diploma]
+
+          %br/
+          %br/
+
+  %li
+    .collapsible-header
+      %i.material-icons> security
+      Military Duty
+    .collapsible-body
+      %span
+      .military_duty
+        %br/
+
+        - data.military_duty.each do |military_duty|
+          %h5
+            = military_duty[:military]
+          %p
+            = military_duty[:location]
+          %p
+            = military_duty[:description]
+
+          %br/
+          %br/
+
+  %li
+    .collapsible-header
+      %i.material-icons> mood
+      Other
+    .collapsible-body
+      %span
+      .other
+        %br/
+
+        - data.other.each do |other|
+          %h5
+            = other[:hobbies]
+          %p
+            = other[:description]
+
+
+          %br/
+          %br/
